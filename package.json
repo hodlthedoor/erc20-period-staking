@@ -1,0 +1,12 @@
+{
+    "name": "smart-contract-deployment",
+    "version": "1.0.0",
+    "scripts": {
+      "deployL1": "sh -c 'forge script script/DeployL1.s.sol:DeployL1Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --verify --etherscan-api-key $SEPOLIA_API_KEY --broadcast'",
+      "deployL2": "sh -c 'forge script script/DeployL2.s.sol:DeployL2Script --rpc-url $POLYGON_RPC_URL --private-key $PRIVATE_KEY --verify --etherscan-api-key $POLYSCAN_API_KEY --broadcast'"
+    },
+    "dependencies": {
+      "dotenv": "^16.0.3"
+    }
+  }
+  
